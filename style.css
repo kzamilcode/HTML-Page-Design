@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap");
+body {
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #41b349;
+}
+
+* {
+  box-sizing: border-box;
+}
+.row {
+  height: 100%;
+  margin: auto;
+}
+.left-heading {
+  font-weight: 700;
+  color: #fff;
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.left-paragraph {
+  color: gray;
+  padding-left: 10px;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.left-column {
+  float: left;
+  /* width: 50%; */
+  padding: 25px 0;
+  align-items: center;
+  vertical-align: center;
+  height: 100%;
+  /* padding-top: 15%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Create two equal columns that floats next to each other */
+.right-column {
+  background-image: url("./img/Responsive (1).png");
+  object-fit: cover;
+  background-position: 50% 50%;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  align-items: center;
+  vertical-align: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 61%;
+}
+.get {
+  color: rgb(238, 238, 238);
+  font-size: 20px;
+  font-weight: 400;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .left-column {
+    width: 100%;
+    height: auto;
+  }
+  .right-column {
+    width: 97%;
+    margin: 0 20px 0 10px;
+    border-radius: 20px;
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.fa-apple,
+.fa-google-play {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.app-btn {
+  width: 45%;
+  max-width: 160px;
+  color: #fff;
+  margin: 20px 10px;
+  text-align: left;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.app-btn.blu {
+  background-color: #101010;
+  transition: background-color 0.25s linear;
+}
+.app-btn.blu:hover {
+  background-color: #454545;
+}
+.app-btn i {
+  width: 20%;
+  text-align: center;
+  font-size: 28px;
+  margin-right: 7px;
+}
+.app-btn .big-txt {
+  font-size: 17px;
+  text-transform: capitalize;
+}
